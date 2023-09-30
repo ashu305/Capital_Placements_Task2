@@ -1,0 +1,10 @@
+export enum SidebarIcons {
+  HOME = "HOME",
+  SETTINGS = "SETTINGS",
+  FORUM = "FORUM",
+  SHARE = "SHARE",
+  FAVORITE = "FAVORITE",
+  ACCOUNT = "ACCOUNT",
+  CALENDAR = "CALENDAR",
+  SAVE = "SAVE",
+}
