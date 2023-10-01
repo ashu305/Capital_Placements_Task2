@@ -66,9 +66,10 @@ const Sidebar = () => {
   const getSideBarIcons = (pos: string) => {
     let res: ReactNode[] = [];
     if (pos === "top") {
-      IconsList.top.map((icon) => {
+      IconsList.top.map((icon, index) => {
         res.push(
           <MyIconButton
+            key={index}
             sx={
               currentOpen === icon.name
                 ? {

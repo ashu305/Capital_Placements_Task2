@@ -1,4 +1,4 @@
-import { Avatar, Box, Chip, IconButton, Typography, styled } from "@mui/material";
+import { Avatar, Box, IconButton, Typography, styled } from "@mui/material";
 import React, { ReactNode } from "react";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";

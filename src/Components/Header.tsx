@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography, styled, Collapse, Slide } from "@mui/material";
+import { Box, IconButton, Typography, styled, Collapse } from "@mui/material";
 import { HeaderData } from "../Data/Data";
 import React, { ReactNode, useState } from "react";
 import PersonOffOutlinedIcon from "@mui/icons-material/PersonOffOutlined";

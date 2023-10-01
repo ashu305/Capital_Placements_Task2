@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Box, styled, Typography } from "@mui/material";
+import { Box, styled } from "@mui/material";
 import Sidebar from "./Components/Sidebar";
 import Header from "./Components/Header";
 import LeftMainBody from "./Components/LeftMainBody";
