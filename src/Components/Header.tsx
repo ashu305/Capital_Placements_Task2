@@ -39,7 +39,7 @@ const Icons = [
 
 const Header = () => {
   const [selectedDropdown, setSelectedDropdown] = useState(3);
-  const [openDropDown, setOpenDropDown] = useState(true);
+  const [openDropDown, setOpenDropDown] = useState(false);
 
   const getIcons = () => {
     let icons: ReactNode[] = [];
@@ -127,11 +127,7 @@ const Header = () => {
 
   return (
     <Wrapper>
-      <Box
-        sx={{
-          marginLeft: "2rem",
-        }}
-      >
+      <Box>
         <MyHeading variant="h6">{HeaderData.heading}</MyHeading>
         <Typography
           variant="subtitle1"
@@ -222,7 +218,6 @@ const Header = () => {
           justifyContent: "flex-start",
           alignItems: "center",
           gap: "0.7rem",
-          marginRight: "1rem",
         }}
       >
         {getIcons()}
@@ -258,7 +253,6 @@ const Wrapper = styled(Box)({
   justifyContent: "space-between",
   alignItems: "flex-start",
   width: "100%",
-  marginTop: "1rem",
 });
 
 const MyHeading = styled(Typography)({

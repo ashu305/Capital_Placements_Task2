@@ -13,3 +13,87 @@ export const HeaderData = {
     { id: 9, name: "Withdrawn", notifications: "25" },
   ],
 };
+
+export const filterOptions = [
+  { id: 1, value: "Personal Information" },
+  { id: 2, value: "Education" },
+  { id: 3, value: "Work Experience" },
+  { id: 4, value: "Activity Filter" },
+  { id: 5, value: "Advanced Filter" },
+];
+
+export const candidatesHeaders = {
+  totalCandidates: 247,
+  Qualified: 25,
+  Task: 25,
+  Disqualified: 25,
+};
+
+export const CandidatesList = [
+  {
+    id: 1,
+    name: "Aaliyah Sanderson",
+    location: "Riyadh, Saudi Arabia",
+    degree: "Bachelor",
+    University: "Cambridge, University",
+    startYear: "2023",
+    endYear: "2023",
+    hashTags: ["#top_candidate", "#top_candidate"],
+    moreDetails: ["New York", "Marketing", "London"],
+  },
+  {
+    id: 2,
+    name: "John Doe",
+    location: "Boston, USA",
+    degree: "Bachelor",
+    University: "MIT",
+    startYear: "2023",
+    endYear: "2023",
+    hashTags: ["#top_candidate", "#top_candidate"],
+    moreDetails: ["New York", "Marketing", "London"],
+  },
+  {
+    id: 3,
+    name: "Thomas Matt",
+    location: "Edinburgh, UK",
+    degree: "Bachelor",
+    University: "Harvard, University",
+    startYear: "2023",
+    endYear: "2023",
+    hashTags: ["#top_candidate", "#top_candidate"],
+    moreDetails: ["New York", "Marketing", "London"],
+  },
+  {
+    id: 4,
+    name: "Kamila Smith",
+    location: "London, UK",
+    degree: "Bachelor",
+    University: "Boston, University",
+    startYear: "2023",
+    endYear: "2023",
+    hashTags: ["#top_candidate", "#top_candidate"],
+    moreDetails: ["New York", "Marketing", "London"],
+  },
+  {
+    id: 5,
+    name: "Roy Jade",
+    location: "Cambridge, UK",
+    degree: "Bachelor",
+    University: "Cambridge, University",
+    startYear: "2023",
+    endYear: "2023",
+    hashTags: ["#top_candidate", "#top_candidate"],
+    moreDetails: ["New York", "Marketing", "London"],
+  },
+  {
+    id: 6,
+    name: "Ahmed Salam",
+    location: "New York, USA",
+    degree: "Bachelor",
+    University: "Cambridge, University",
+    startYear: "2023",
+    endYear: "2023",
+    hashTags: ["#top_candidate", "#top_candidate"],
+    moreDetails: ["New York", "Marketing", "London"],
+  },
+];
