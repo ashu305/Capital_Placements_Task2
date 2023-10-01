@@ -2,11 +2,11 @@ import { Box, IconButton, Typography, styled } from "@mui/material";
 import React, { ReactNode, useState } from "react";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
-import { candidatesHeaders } from "../Data/Data";
+import { CandidatesList, candidatesHeaders } from "../Data/Data";
 import Candidate from "./Candidate";
 
 const RightMainBody = () => {
-  const [selectedCandidates, setSelectedCandidates] = useState([]);
+  const [selectedCandidates, setSelectedCandidates] = useState<Array<Number>>([]);
   const [selectAll, setSelectAll] = useState(false);
   const [selectedHeader, setSelectedHeader] = useState(1);
 
@@ -59,6 +59,28 @@ const RightMainBody = () => {
     return headers;
   };
 
+  const handleSelectAll = () => {
+    if (selectAll) {
+      setSelectedCandidates([]);
+      setSelectAll(false);
+    } else {
+      setSelectedCandidates(CandidatesList.map((_, index) => index));
+      setSelectAll(true);
+    }
+  };
+
+  const renderCandidates = () => {
+    return CandidatesList.map((candidate, index) => {
+      return (
+        <Candidate
+          key={index}
+          candidateDetails={candidate}
+          selectedCandidates={selectedCandidates}
+          setSelectedCandidates={setSelectedCandidates}
+        />
+      );
+    });
+  };
   return (
     <Wrapper>
       <Header>
@@ -71,7 +93,7 @@ const RightMainBody = () => {
           }}
         >
           <IconButton
-            onClick={() => setSelectAll(!selectAll)}
+            onClick={() => handleSelectAll()}
             sx={{
               transition: "all 0.5s ease",
             }}
@@ -121,7 +143,7 @@ const RightMainBody = () => {
           backgroundColor: "#cbcbcb",
         }}
       />
-      <Candidate />
+      {renderCandidates()}
     </Wrapper>
   );
 };

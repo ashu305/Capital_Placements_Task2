@@ -198,6 +198,7 @@ const Header = () => {
           sx={{
             position: "absolute",
             top: "3.2rem",
+            zIndex: "10",
           }}
         >
           <MyDropdown
